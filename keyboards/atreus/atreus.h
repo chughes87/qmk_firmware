@@ -9,17 +9,18 @@
 // This a shortcut to help you visually see your layout.
 // The first section contains all of the arguements
 // The second converts the arguments into a two-dimensional array
+
+
 #define LAYOUT( \
-  k00, k01, k02, k03, k04,           k05, k06, k07, k08, k09, \
-  k10, k11, k12, k13, k14,           k15, k16, k17, k18, k19, \
-  k20, k21, k22, k23, k24,           k25, k26, k27, k28, k29, \
-  k30, k31, k32, k33, k34, k35, k36, k37, k38, k39, k3a, k3b \
-) \
-{ \
-	{ k00, k01, k02, k03, k04, KC_NO, k05, k06, k07, k08, k09 }, \
-	{ k10, k11, k12, k13, k14, KC_NO, k15, k16, k17, k18, k19 }, \
-	{ k20, k21, k22, k23, k24, k35,   k25, k26, k27, k28, k29 }, \
-	{ k30, k31, k32, k33, k34, k36,   k37, k38, k39, k3a, k3b } \
+  K00, K01, K02, K03, K04,           K05, K06, K07, K08, K09, \
+  K10, K11, K12, K13, K14,           K15, K16, K17, K18, K19, \
+  K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A, K2B, \
+  K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K3A, K3B \
+) {                                                                     \
+  { K09, K08, K07, K06, K05, K26, K04, K03, K02, K01, K00 }, \
+  { K19, K18, K17, K16, K15, K25, K14, K13, K12, K11, K10 }, \
+  { K2B, K2A, K29, K28, K27, K36, K24, K23, K22, K21, K20 }, \
+  { K3B, K3A, K39, K38, K37, K35, K34, K33, K32, K31, K30 } \
 }
 
 #endif
