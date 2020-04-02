@@ -22,6 +22,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL
 
 #define MASTER_LEFT
-// #define MASTER_RIGHT
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 100
+//#define IGNORE_MOD_TAP_INTERRUPT
+#define MASTER_RIGHT
 //#define EE_HANDS
 // Rows are doubled-up

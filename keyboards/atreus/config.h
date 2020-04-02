@@ -88,5 +88,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_ONESHOT
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 100
 
 #endif
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 100
