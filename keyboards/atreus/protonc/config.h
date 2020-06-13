@@ -28,12 +28,13 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-// #define MATRIX_ROW_PINS { D0, D1, D3, D2 }
-// #if defined(PCBDOWN)
-//   #define MATRIX_COL_PINS { B7, D6, F7, F6, B6, D4, E6, B4, B5, C6, D7 }
-// #else
-//   #define MATRIX_COL_PINS { D7, C6, B5, B4, E6, D4, B6, F6, F7, D6, B7 }
-// #endif
+#pragma once
+
+#define MATRIX_ROWS 4
+#define MATRIX_COLS 11
+
+#define MATRIX_ROW_PINS { A2, A1, A0, B13 }
+#define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/

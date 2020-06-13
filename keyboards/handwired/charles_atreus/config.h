@@ -1,20 +1,22 @@
-/* Copyright 2019
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+/*
+Copyright 2012 Jun Wako <wakojun@gmail.com>
 
-#pragma once
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#ifndef CONFIG_H
+#define CONFIG_H
 
 #include "config_common.h"
 
@@ -25,7 +27,7 @@
 #define DEVICE_VER      0x0008
 #define MANUFACTURER    Technomancy
 #define PRODUCT         Atreus
-#define DESCRIPTION     QMK keyboard firmware for Atreus
+#define DESCRIPTION     q.m.k. keyboard firmware for Atreus
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -33,8 +35,8 @@
 
 // Change this to how you wired your keyboard
 // COLS: Left to right, ROWS: Top to bottom
-// #define MATRIX_ROW_PINS { A2, A1, A0, B13 }
-// #define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
+#define MATRIX_ROW_PINS { A2, A1, A0, B13 }
+#define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
 //#define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
 
 /* COL2ROW or ROW2COL */
@@ -47,15 +49,15 @@
 //#define BACKLIGHT_LEVELS 3
 
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 5
+#define DEBOUNCING_DELAY 5
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-// /* key combination for command */
-// #define IS_COMMAND() ( keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) )
+/* key combination for command */
+#define IS_COMMAND() ( keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) )
 
 /*
  * Feature disable options
@@ -74,6 +76,11 @@
 //#define NO_ACTION_ONESHOT
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
+#define PERMISSIVE_HOLD
+#define TAPPING_FORCE_HOLD
+#define TAPPING_TERM 100
+
+#endif
 #define PERMISSIVE_HOLD
 #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 100
