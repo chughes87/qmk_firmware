@@ -19,32 +19,22 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-
-#define VENDOR_ID       0x1209
-#define PRODUCT_ID      0xA1E5
-#define DEVICE_VER      0x0008
-#define MANUFACTURER    Technomancy
+#define VENDOR_ID       0xFEED
+#define PRODUCT_ID      0x6060
+#define DEVICE_VER      0x0001
+#define MANUFACTURER    Charles Hughes
 #define PRODUCT         Atreus
-#define DESCRIPTION     QMK keyboard firmware for Atreus
+#define DESCRIPTION     QMK keyboard firmware for custom Atreus
 
+// #define VENDOR_ID       0x1209
+// #define PRODUCT_ID      0xA1E5
+// #define DEVICE_VER      0x0008
+// #define MANUFACTURER    Technomancy
+// #define PRODUCT         Atreus
+// 
 /* key matrix size */
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 11
-
-// Change this to how you wired your keyboard
-// COLS: Left to right, ROWS: Top to bottom
-// #define MATRIX_ROW_PINS { A2, A1, A0, B13 }
-// #define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
-//#define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
-
-/* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION COL2ROW
-
-/* define if matrix has ghost */
-//#define MATRIX_HAS_GHOST
-
-/* number of backlight levels */
-//#define BACKLIGHT_LEVELS 3
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
@@ -53,9 +43,6 @@
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
-
-// /* key combination for command */
-// #define IS_COMMAND() ( keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) )
 
 /*
  * Feature disable options

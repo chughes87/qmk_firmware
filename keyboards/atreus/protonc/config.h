@@ -33,8 +33,12 @@
 #define MATRIX_ROWS 4
 #define MATRIX_COLS 11
 
-#define MATRIX_ROW_PINS { A2, A1, A0, B13 }
-#define MATRIX_COL_PINS { B14, B15, B10, B11, B12, B0, B1, B2, B3, B4, B5 }
+// Change this to how you wired your keyboard
+// COLS: Left to right, ROWS: Top to bottom
+
+#define MATRIX_ROW_PINS { B7, B6, B5, B3 }
+// #define MATRIX_COL_PINS { B2, B1, A4, A5, A6, B9, B15, B14, B13, B8, A0 }
+#define MATRIX_COL_PINS { A0, B8, B13, B14, B15, B9, A6, A5, A4, B1, B2 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
