@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,     Z,     X,     C,     V,     B,                      N,     M,  COMM,   DOT,  SLSH,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                LGUI_T(KC_ESC), KC_LSHIFT, MO(_LOWER),   MO(_LOWER),  KC_SPC, LCTL_T(KC_BSPC) \
                               //`--------------------'  `--------------------'
   ),
 
@@ -74,11 +74,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------.                ,-----------------------------------------.
         ESC,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-      CTLTB,    F1,    F2,    F3,    F4,    F5,                     F6,    F7,    F8,    F9,   F10, XXXXX,\
+     CTLTB, KC_LBRC,KC_RBRC,KC_LCBR,KC_RCBR,KC_F3,             KC_LEFT,KC_DOWN,KC_UP,KC_RIGHT,KC_PIPE, XXXXX,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT,   F11,   F12,   F13,   F14,   F15,                    F16,   F17,   F18,   F19,   F20, XXXXX,\
+     KC_HOME,KC_END,KC_MPRV,KC_MPLY, KC_MNXT,                  KC_VOLD,KC_VOLU,KC_EQUAL,KC_GT,KC_BSLS, XXXXX,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                LGUI_T(KC_ESC), KC_LSHIFT, MO(_LOWER),   MO(_LOWER),  KC_SPC, LCTL_T(KC_BSPC) \
                               //`--------------------'  `--------------------'
   ),
 
